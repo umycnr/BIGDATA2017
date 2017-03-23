@@ -1,0 +1,51 @@
+                                Review Paper
+  I Introduction
+  FP-tree merupakan salah satu metode yang dilakukan dalam melakukan mining data. Fp-tree sendiri merupakan pengembangan 
+  dari metode yang sudah umum yaitu apriori heurustic search. FP-tree memperbaiki metode apriori search pada tahap candidate 
+  set generation and test. Asumsinya jika dapat menghindari himpunan kandidat yang terlalu banyak, makan performa dari metode 
+  FP-tree akan dapat ditingkatkan. Cara untuk mengatasi masalah tersebut adalah dengan 3 cara berikut:
+  
+  1. Membangun suatu struktur data yang berbentuk tree yang menyimpan informasi kuantitif tentang Frequent-Pattern
+  2. Struktur Data yang berbentuk pohon akan diolah mulai dari panjang ke-l dari pattern dan diulangi secara rekursif pada struktur
+  data pohon
+  3. Pencarian pada tree akan menggunakan metode partitioning-based dan divide-and-conquer daripada menggunakan bottom-up generation 
+  of frequent itemsets combinations seperti pada metode apriori heuristic search
+  
+  Hasil perbandingan performa antara FP-tree dan apriori heuristic menunjukkan masih lebih baik FP-tree. Performa Fp-tree juga lebih baik
+  daripada metode mining data yang lain yaitu TreeProjection
+  
+  II. Discussion
+  Frequent Pattern Tree merupakan suatu tree yang memenuhi sarat berikut:
+  1. Mengandung 1 root yang memiliki label "null"
+  2. Setiap node pada tree memiliki 3 item yaitu item-name, count, dan node-link
+  3. Setiap entri pada frequent-item header memiliki 2 tabel yaitu, item-name dan head of node-link
+  
+  Dalam satu kali proses konstruksi FP-tree dibutuhkan 2 kali scan pada database transaksi. Scan yang pertama berfungsi untuk mengambil
+  set pada frequent item, dan scan yang kedua berfungsi untuk konstruksi pada FP-tree. FP-tree sangat cocok untuk menyimpan frequent 
+  pattern mining. Hal ini disebabkan karena ukuran file dari FP-tree lebih kecil daripada ukuran file dari database dan kandidat pada suatu
+  himpunan sudah terbentuk dalam asosiasi rule mining.
+  
+  Secara umum tahapan yang digunakan adalah
+  1. Konstruksi pembangunan FP-tree untuk projected database
+  Ketika suatu database sudah terlalu besar untuk dilakukan konstruksi FP-tree, maka hal pertama yang perlu dilakukan dalah dengan cara
+  melakukan partisi pada database tersebut. Hasil partisi dari database tersebut akan dilakukan konstruksi FP-tree sesuai dengan partisinya.
+  Sehingga ukuran dari FP-tree pada masing-masing pada setiap partisi akan memiliki ukuran lebih kecil dari database.
+  
+  2. Konstruksi disk resident FP-tree
+  Struktur B+ tree sudah cukup populer digunakan pada relasional database. Level paling atas dapat dipisah berdasarkan item-prefix subtree
+  pada akar dan level bawahnya juga dipisah berdasarkan common prefix paths.
+  
+  3. Matrealisasi untuk FP-tree
+  Walaupun FP-tree cukup compact, konstruksinya tetap membutuhkan 2 kali proses scan dari transaksi database. Sehingga dibutuhkan proses
+  matrealisasi untuk melakukan optimasi pada FP-tree
+  
+  4. Pembaharuan secara incremental FP-tree
+  Salah satu masalah yang ditimbulkan pada proses matrealisasi adalah pembaharuan secara incremental pada FP-tree. Jika 1 proses 
+  matrealisasi membutuhkan minimal 1 support, maka update tidak akan menyebabkan masalah pada FP-tree. Namun FP-tree ukurannya akan masih
+  tetap bertambah besar.
+  
+  III Conclusion
+  Secara Umum FP-tree memiliki performa yang lebih baik daripada metode sebelumnya seperti apriori dan TreeProjection. FP-tree sangat 
+  cocok untuk database yang cukup besar sebab prosesnya dibutuhkan partisi ketika skema database terlalu besar. Keunggulan FP-tree
+  menggunakan divide and conquer sehingga waktu yang dibutuhkan relatif singkat. Terdapat banyak research yang menarik dalam topik
+  FP-tree, termasuk yang mempelajari dan implementasi dari SQL-based.
