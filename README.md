@@ -11,3 +11,11 @@ M Faris Ponighzwa : <br>
 1. https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/6789610583685688/3739141973036612/1052072332651802/latest.html <br>
 2. https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/6789610583685688/3739141973036632/1052072332651802/latest.html (scala)<br>
 3. https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/6789610583685688/3739141973036662/1052072332651802/latest.html (python)
+
+
+"Exercise 7" <br>
+Umy Chasanah Noor Rizqi : <br>
+1. https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/2553480215414961/3263253331356636/3250945604933392/latest.html
+<br>
+2.https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/2553480215414961/3263253331356655/3250945604933392/latest.html (scala)<br>
+3. https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/2553480215414961/3263253331356674/3250945604933392/latest.html (python)
